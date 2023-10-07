@@ -1,0 +1,14 @@
+{
+  "name": "use_noah_npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "noah_publish_npm_demo": "^1.0.3"
+  }
+}
