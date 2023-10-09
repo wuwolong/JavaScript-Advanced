@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <!-- <script src="./01_debounce-underscore.js"></script> -->
+    <!-- <script src="./02_debounce_coderwhy.js"></script> -->
+    <script src="./03_throttle-coderwhy.js"></script>
+    <script>
+      const inputEl = document.querySelector('#input')
+      let index = 1
+      function handleInput(e) {
+        console.log(`发送了${index++}次网络请求`, this, e)
+        return 'handleInput'
+      }
+      const _throttle = throttle(handleInput, 2000, true)
+      inputEl.addEventListener('input', _throttle)
+    </script>
+  </body>
+</html>
